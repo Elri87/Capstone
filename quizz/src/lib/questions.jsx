@@ -9,7 +9,7 @@ const questions = [
       "What is the correct syntax for declaring a variable in JavaScript?",
     isAnswered: false,
     options: [
-      "var name = 'value';",
+      "const name = 'value';",
       "variable name = 'value';",
       "var: name = 'value';",
     ],
@@ -391,4 +391,27 @@ const questions = [
     },
   },
 ];
+
 export default questions;
+
+// export const sprites = [
+//   "rock",
+//   "rockThree",
+//   // "worm",
+//   "boar",
+//   "cat",
+//   "man",
+//   "chest",
+//   "gemgold",
+//   "frogblue",
+//   "hiveOne",
+//   "catstretching",
+//   // "man2",
+//   "gemgreen",
+//   "box",
+//   "moon",
+//   "snail",
+//   "goldchest",
+//   "froggreen",
+//   "gemblue",
+// ];
