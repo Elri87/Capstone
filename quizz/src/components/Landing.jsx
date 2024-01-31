@@ -12,9 +12,13 @@ import Footer from "./Footer.jsx";
 
 export default function Landing({ user }) {
   const [hideHowToButton, setHideHowToButton] = useState(true);
-  const [error, setError] = useState("");
+  const [error, setError] = useState("You must login or register to play");
 
   function handleHowtoClick() {
+    setHideHowToButton(!hideHowToButton);
+  }
+
+  function handlePlay() {
     setHideHowToButton(!hideHowToButton);
   }
 
@@ -23,15 +27,15 @@ export default function Landing({ user }) {
       <div id="homepage-container">
         <div id="homepage-left-container">
           <div className="container">
-            <h1 className="typed">A JavaScript Escape Room</h1>
+            <h1 className="typed">A JavaScript Escape Jungle</h1>
           </div>
           <div className="home-description">
             <p>Welcome to CodeHero!</p>
             <p>
-              A game where your journey to becoming a Javascript master coder
-              begins.
+              A game where you test your knowledge on your journey to becoming a
+              Javascript master coder.
             </p>
-            <p>Ready to start your odyssey?</p>{" "}
+            <p>Ready to start your odyssey?</p>
             <p>
               Sharpen your mind, prepare your keyboard, and step into the world
               of
@@ -54,33 +58,28 @@ export default function Landing({ user }) {
               <p>
                 Embark on an adventure through four stages, each representing a
                 critical stage in your coding education. Your ultimate goal? To
-                land a dream job in the competitive world of software
-                development. You must find and answer five coding questions
-                correctly to progress.{" "}
+                test your knowledge. You must find and answer five coding
+                questions correctly to progress.{" "}
                 <span id="warning-text">
                   Be warned: a single incorrect answer, and you'll have to start
                   your journey afresh.{" "}
                 </span>
                 But fear not, for with each attempt, you grow stronger in your
-                knowledge and closer to your dream job.
+                knowledge and closer to your goals.
               </p>
             </div>
           </div>
-          <div id="play-now-container">
-            <button
-              id="play-now-btn"
-              className="changeColor"
-              onClick={() => {
-                if (!user.id) {
-                  setError("You must login or register to play");
-                } else {
-                }
-              }}
-            >
-              <Link href={"/level"}>Play</Link>
-            </button>
-          </div>{" "}
-          {error}
+          <div>
+            <div>
+              {!user.id ? (
+                <Link href={"/login"}>{error}</Link>
+              ) : (
+                <Link href={"/level"} id="play-now-btn">
+                  Play
+                </Link>
+              )}
+            </div>
+          </div>
         </div>
         <div id="homepage-right-container">
           <Image src={CodeHero} alt="Level One Map" className="homepage-img" />
