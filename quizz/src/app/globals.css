@@ -24,7 +24,6 @@ body {
   height: 100vh;
 }
 
-
 #home {
   position: absolute;
   color: #fff;
@@ -815,29 +814,23 @@ body {
   cursor: pointer;
 }
 
-
 .volume-control:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
-
 .btnhelp {
   display: inline-block;
-  color: inherit; 
-  text-decoration: none; 
+  color: inherit;
+  text-decoration: none;
   border: inherit;
-  padding: inherit; 
+  padding: inherit;
 }
-
 
 .btnhelp:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-
-
-
 
 /* .btnhelpoutline {
   cursor: pointer;
@@ -1068,7 +1061,7 @@ body {
 }
 
 .bckhelpoutline:hover {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 @keyframes alarmAnimation {
@@ -1499,7 +1492,7 @@ body.fullscreen .footer-basic {
   font-family: "Press Start 2P";
   justify-content: center;
   align-items: center;
-  font-size: 4vw;
+  font-size: 0.5vw;
   font-weight: bold;
   animation: result-message 1s linear infinite;
   text-shadow: 0.1vw 0.1vw 0.1vw #333;
@@ -1507,15 +1500,15 @@ body.fullscreen .footer-basic {
 
 @keyframes result-message {
   0% {
-    transform: rotate(0) scale(1)
+    transform: rotate(0) scale(1);
   }
 
   50% {
-    transform: rotate(0) scale(1.2)
+    transform: rotate(0) scale(1.2);
   }
 
   100% {
-    transform: rotate(0) scale(1)
+    transform: rotate(0) scale(1);
   }
 }
 

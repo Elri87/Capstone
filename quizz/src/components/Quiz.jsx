@@ -39,7 +39,7 @@ export default function Quiz({
   const [transition, setTransition] = useState(false);
   const [winGame, setWinGame] = useState(false);
 
-  async function handleAnswer(isCorrect) {
+  function handleAnswer(isCorrect) {
     setResultMessage("");
     if (isCorrect && question?.type !== "message") {
       setResultMessage("Correct");
@@ -57,21 +57,11 @@ export default function Quiz({
           setTransition(true);
           setResultMessage("");
 
-          // const response = await fetch(`/api/users/${user.id}`, {
-          //   method: "PUT",
-          //   headers: {
-          //     "Content-Type": "application/json",
-          //   },
-          //   body: JSON.stringify({
-          //     userId: user.id,
-          //     level,
-          //   }),
-          // });
           setTimeout(() => {
             setLevel(level + 1);
             setTransition(false);
             setResultMessage("");
-          }, 6000);
+          }, 4000); //changed this from 6000 for transition comp
         } else {
           setResultMessage("");
           setWinGame(true);
@@ -86,12 +76,6 @@ export default function Quiz({
       setLoseGame(true);
       setShowPopup(false);
     }
-
-    // questions?.map((quest) => {
-    //   if (quest.id === question.id) {
-    //     question.isAnswered = true;
-    //   }
-    // });
   }
 
   function handleHint() {

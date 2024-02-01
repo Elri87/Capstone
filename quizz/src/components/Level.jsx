@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link.js";
-import { useLocation } from "react-router-dom";
 import { useRouter } from "next/navigation.js";
-import { Router, Route } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css";
@@ -113,7 +111,7 @@ export default function LevelPage({ user, note }) {
             <span>&gt;</span>Move
           </span>
           <span>
-            <span class="rotate">&lt;</span>Jump
+            <span className="rotate">&lt;</span>Jump
           </span>
           <span className="btnhelp">
             <Tippy placement="top" content="Help">

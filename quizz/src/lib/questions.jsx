@@ -13,8 +13,9 @@ const questions = [
       "variable name = 'value';",
       "var: name = 'value';",
     ],
-    answer: "var name = 'value';",
-    hint: "The correct syntax uses a keyword followed by the name and assignment operator.",
+    answer: "const name = 'value';",
+    hint:
+      "The correct syntax uses a keyword followed by the name and assignment operator.",
     resultMessage: {
       correct: "",
     },
@@ -46,7 +47,8 @@ const questions = [
       "function = myFunction()",
     ],
     answer: "function myFunction()",
-    hint: "A function is defined with a keyword, followed by a name, followed by parentheses ().",
+    hint:
+      "A function is defined with a keyword, followed by a name, followed by parentheses ().",
     resultMessage: {
       correct: "",
     },
@@ -60,7 +62,8 @@ const questions = [
     isAnswered: false,
     options: ["true", "false", "SyntaxError"],
     answer: "true",
-    hint: "Consider how JavaScript handles type coercion with the '==' operator.",
+    hint:
+      "Consider how JavaScript handles type coercion with the '==' operator.",
     resultMessage: {
       correct: "",
     },
@@ -78,7 +81,8 @@ const questions = [
       "// This is a comment",
     ],
     answer: "//",
-    hint: "In JavaScript, single-line comments are created using two forward slashes.",
+    hint:
+      "In JavaScript, single-line comments are created using two forward slashes.",
     resultMessage: {
       correct: "",
     },
@@ -113,7 +117,8 @@ const questions = [
       "array.findMax()",
     ],
     answer: "Math.max(...array)",
-    hint: "There's a built-in object in JavaScript that deals with mathematical operations.",
+    hint:
+      "There's a built-in object in JavaScript that deals with mathematical operations.",
     resultMessage: {
       correct: "",
     },
@@ -168,7 +173,8 @@ const questions = [
     isAnswered: false,
     options: ["Fizz", "Buzz", "FizzBuzz", "15"],
     answer: "FizzBuzz",
-    hint: "This is a classic FizzBuzz problem. Check the conditions for divisibility by 3 and 5.",
+    hint:
+      "This is a classic FizzBuzz problem. Check the conditions for divisibility by 3 and 5.",
     resultMessage: {
       correct: "",
     },
@@ -206,7 +212,8 @@ const questions = [
       "document.selectById('')",
     ],
     answer: "document.querySelector('')",
-    hint: "The querySelector method is quite versatile. Remember how it can be used to select elements by ID.",
+    hint:
+      "The querySelector method is quite versatile. Remember how it can be used to select elements by ID.",
     resultMessage: {
       correct: "",
     },
@@ -221,7 +228,8 @@ const questions = [
     isAnswered: false,
     options: ["setState", "render", "props"],
     answer: "props",
-    hint: "This is a mechanism in React for passing data from a parent component to a child component.",
+    hint:
+      "This is a mechanism in React for passing data from a parent component to a child component.",
     resultMessage: {
       correct: "",
     },
@@ -236,7 +244,8 @@ const questions = [
     isAnswered: false,
     options: ["JavaScript Console", "Node.js", "CSS Inspector"],
     answer: "JavaScript Console",
-    hint: "This tool is part of the browser's developer tools and is commonly used for logging output and running JavaScript.",
+    hint:
+      "This tool is part of the browser's developer tools and is commonly used for logging output and running JavaScript.",
     resultMessage: {
       correct: "",
     },
@@ -254,7 +263,8 @@ const questions = [
       "Attaches an event handler to an element",
     ],
     answer: "Attaches an event handler to an element",
-    hint: "This method is used to listen for events on an element, like clicks or key presses.",
+    hint:
+      "This method is used to listen for events on an element, like clicks or key presses.",
     resultMessage: {
       correct: "",
     },
@@ -268,7 +278,8 @@ const questions = [
     isAnswered: false,
     options: ["document.body", "document.head", "document.documentElement"],
     answer: "document.documentElement",
-    hint: "This object represents the entire HTML document and can be used as the root to access any other node.",
+    hint:
+      "This object represents the entire HTML document and can be used as the root to access any other node.",
     resultMessage: {
       correct: "",
     },
@@ -286,7 +297,8 @@ const questions = [
       "document.deleteElement(element);",
     ],
     answer: "element.remove();",
-    hint: "This method allows you to directly remove the element it's called on.",
+    hint:
+      "This method allows you to directly remove the element it's called on.",
     resultMessage: {
       correct: "",
     },
@@ -370,7 +382,8 @@ const questions = [
     ],
     answer:
       "An object representing the eventual completion or failure of an asynchronous operation",
-    hint: "It's a core object that represents the eventual completion (or failure) of an asynchronous operation.",
+    hint:
+      "It's a core object that represents the eventual completion (or failure) of an asynchronous operation.",
     resultMessage: {
       correct: "",
     },
